@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const blogItem = Array.from(navMenu.querySelectorAll('li a')).find(a => a.textContent.trim().toLowerCase() === 'blog'.toLowerCase());
         
         if (blogItem) {
-            // Criando o item "ABOUT US"
+            // 9- Criar o item "ABOUT US"
             const aboutUsItem = document.createElement('li');
             aboutUsItem.textContent = 'ABOUT US';
             
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Verificando se o email tem formato válido
             else if (!emailRegex.test(emailValue)) {
                 event.preventDefault();  // Impede o envio do formulário
-                console.log("Email inválido!");  // Verifique se a condição de email inválido está sendo acionada
+                console.log("Email inválido!");  // Verifica se a condição de email inválido está sendo acionada
                 alert('O email informado não é válido');
             }
         });
